@@ -28,7 +28,7 @@ public class RegisterTest extends BaseTest {
         String expected_message = "Account Information";
 
         //go to register page
-        homePage.goToRegisterLink();
+        //homePage.goToRegisterLink();
 
         //fills the form with fakedata
         registerPage.fillOutFormWithFakeData(faker.name().firstName(),faker.name().lastName(),email,password);
