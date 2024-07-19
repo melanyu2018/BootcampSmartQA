@@ -1,9 +1,6 @@
 package com.magento.tests;
 
-import com.magento.pages.ComprobanteFacPage;
-import com.magento.pages.HomePage;
-import com.magento.pages.LoginPage;
-import com.magento.pages.RegisterPage;
+import com.magento.pages.*;
 import com.magento.utils.Variable;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
@@ -21,6 +18,8 @@ public class BaseTest {
     protected LoginPage loginPage;
     protected HomePage homePage;
     protected ComprobanteFacPage comprobanteFacPage;
+    protected VistaDocumentoPage vistaDocumentoPage;
+    protected BusquedaComprobantePage busquedaComprobantePage;
     @BeforeMethod
     public void setup(){
         driver= new EdgeDriver();//instanciando el objeto driver
@@ -29,6 +28,8 @@ public class BaseTest {
         registerPage=new RegisterPage(driver) ;
         loginPage=new LoginPage(driver);
         comprobanteFacPage=new ComprobanteFacPage(driver);
+        vistaDocumentoPage=new VistaDocumentoPage(driver);
+        busquedaComprobantePage=new BusquedaComprobantePage(driver);
 
     }
 

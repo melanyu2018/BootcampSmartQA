@@ -61,5 +61,14 @@ public class BasePage {
         }
         return true;
     }
+    public boolean isDisplayAll (WebElement element){
+        try {
+
+            wait.until(ExpectedConditions.visibilityOfAllElements(element));
+        } catch (Exception e){
+            return false;
+        }
+        return true;
+    }
 
 }

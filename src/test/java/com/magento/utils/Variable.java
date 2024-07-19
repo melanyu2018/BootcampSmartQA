@@ -6,5 +6,5 @@ import org.openqa.selenium.WebDriver;
 
 public class Variable {
     public static int TIME_OUT=10;
-    public static String BASE_URL="https://erpperucrt.smartclic.pe/auth/login";
+    public static String BASE_URL="https://erpperucrt.gitoca.com/auth/login";
 }
